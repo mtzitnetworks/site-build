@@ -1,0 +1,22 @@
+{
+  "name": "mtz-it",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "format": "prettier --write '**/*.{js,css,html,md,njk,liquid}'",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.1.13"
+  },
+  "dependencies": {
+    "eleventy-plugin-tailwindcss-4": "^2.0.1"
+  }
+}
