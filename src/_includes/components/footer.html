@@ -24,8 +24,8 @@
         <span class="text-white">LOGO</span>
       </div>
       <address class="mt-4.5 text-white not-italic text-sm/6 font-semibold">
-        <a href="tel:555-555-5555" class="px-1 -mx-1 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">(555) 555-5555</a><br />
-        <a href="mailto:contact@mywebsite.com" class="px-1 -mx-1 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">contact@mywebsite.com</a>
+        <a href="{{ metadata.tel.link }}" class="px-1 -mx-1 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">{{ metadata.tel.number }}</a><br />
+        <a href="{{ metadata.email.link }}" class="px-1 -mx-1 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">{{ metadata.email.string }}</a>
       </address>
     </div>
   </div>

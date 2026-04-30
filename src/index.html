@@ -14,15 +14,14 @@ layout: layouts/base.html
     </p>
     <p class="flex gap-x-1 items-center">
       <span class="w-[14px] h-[14px] bg-red-100"></span>
-      <span class="text-sm/6 font-semibold text-white"
-        >Call Us Today (555) 555-5555</span
-      >
+      <a href="{{ metadata.tel.link }}" class="text-sm/6 font-semibold text-white z-1"
+        >Call Us Today {{ metadata.tel.number }}</a>
     </p>
   </div>
   <div class="relative isolate pt-20">
     <div
       aria-hidden="true"
-      class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+      class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden pointer-events-none blur-3xl sm:-top-80"
     >
       <div
         style="
@@ -330,7 +329,7 @@ layout: layouts/base.html
             <span class="sr-only">Phone Number</span>
           </dt>
           <dl>
-            <a href="" class="px-1 -mx-1 rounded-md font-medium text-gray-400 hover:text-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">(555) 555-5555</a>
+            <a href="{{ metadata.tel.link }}" class="px-1 -mx-1 rounded-md font-medium text-gray-400 hover:text-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">{{ metadata.tel.number }}</a>
           </dl>
         </div>
         <div class="flex gap-x-2.5 text-white relative">
@@ -338,7 +337,7 @@ layout: layouts/base.html
             <span class="sr-only">Email</span>
           </dt>
           <dl>
-            <a href="" class="px-1 -mx-1 rounded-md font-medium text-gray-400 hover:text-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">contact@myemail.com</a>
+            <a href="{{ metadata.email.link }}" class="px-1 -mx-1 rounded-md font-medium text-gray-400 hover:text-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">{{ metadata.email.string }}</a>
           </dl>
         </div>
       </dl>
