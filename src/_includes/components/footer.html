@@ -24,8 +24,8 @@
       </li>
     </ul>
     <div class="mt-6 sm:mt-0">
-      <div class="w-[140px] h-[40px] bg-black flex justify-center items-center">
-        <span class="text-white">LOGO</span>
+      <div aria-hidden="true" class="h-[40px] inline-block">
+        {% include "../svg/logo.html" %}
       </div>
       <address class="mt-4.5 text-white not-italic text-sm/6 font-semibold">
         <a href="{{ metadata.tel.link }}" class="px-1 -mx-1 rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">{{ metadata.tel.number }}</a><br />
